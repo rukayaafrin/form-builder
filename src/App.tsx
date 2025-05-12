@@ -7,7 +7,7 @@ import { FormProvider } from './utils/FormContext';
 export default function App() {
   return (
     <FormProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/form-builder">
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<BuilderPage />} />
